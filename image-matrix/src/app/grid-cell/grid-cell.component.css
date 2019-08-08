@@ -1,0 +1,50 @@
+.grid-cell {
+  width: 180px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  border: 2px black solid;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: #2b2c5f;
+}
+
+.grid-title {
+  text-align: center;
+  font-weight: 700;
+  margin: 5px 3px;
+  height: 55px;
+  overflow: scroll;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.grid-image-container {
+  display: flex;
+  flex-grow: 2;
+  background-color: #2b2c5f;
+  max-height: 190px;
+  overflow: scroll;
+}
+
+.grid-image {
+  max-height: 190px;
+  max-width: 170px;
+  margin: auto;
+}
+
+.grid-description {
+  visibility: hidden;
+  max-width: 170px;
+  max-height: 240px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 3px;
+  position: absolute;
+  overflow: scroll;
+}
+
+.grid-cell:hover .grid-description {
+  visibility: visible;
+}
