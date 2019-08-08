@@ -1,0 +1,9 @@
+<ul class="image-grid">
+  <grid-cell
+    *ngFor="let photo of photoList | async"
+    id="{{ photo.id }}"
+    title="{{ photo.title }}"
+    description="{{ photo.description }}"
+    imageurl="{{ photo.imageurl }}"
+  ></grid-cell>
+</ul>
